@@ -1,0 +1,44 @@
+.section3{
+    position: relative;
+    padding: 30px;
+    min-height: 900px;
+}
+.section3 > h2 {
+    color: var(--azul);
+    font-size: 2.5rem;
+}
+.listaEstudios {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 120px 120px 120px;
+    row-gap: 20px;
+}
+.tarjetasEstudios {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 0px 20px;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+.imgEstudio{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imgEstudio > img {
+    height: 50%;
+    width: auto;
+    object-fit: cover;
+}
+.institucionEstudios {
+    height: 100%;
+    display: flex;
+    color: var(--gris);
+    flex-direction: column;
+    justify-content: center;
+}

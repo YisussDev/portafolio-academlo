@@ -1,6 +1,7 @@
 .section2 {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 480px 500px;
+    height: 980px;
 }
 #acercaDeMi{
     padding: 80px 20px 0px 20px;
@@ -15,7 +16,9 @@
     color: var(--gris);
 }
 #misHabilidades {
+    margin-top: 80px;
     position: relative;
+    height: 500px;
     
 }
 #misHabilidades > h2 {
