@@ -1,0 +1,94 @@
+.section2 {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+#acercaDeMi{
+    padding: 80px 20px 0px 20px;
+}
+#acercaDeMi > h2 {
+    font-size: 2.5rem;
+    color: var(--azul);
+    margin-bottom: 20px;
+}
+#acercaDeMi > p {
+    font-size: 1.3rem;
+    color: var(--gris);
+}
+#misHabilidades {
+    position: relative;
+    
+}
+#misHabilidades > h2 {
+    position: absolute;
+    color: var(--azul);
+    font-size: 2.3rem;
+    top: 40px;
+    left: 115px;
+}
+.burbujaAzul {
+    background-color: var(--azul);
+    position: absolute;
+    border-radius: 50%;
+    left: -125px;
+    height: 250px;
+    width: 250px;
+}
+.burbujaAzul > h2 {
+    position: absolute;
+    color: white;
+    font-size: 2.3rem;
+    top: 40px;
+    left: 165px;
+}
+.burbujaNaranja {
+    position: absolute;
+    background-color: var(--naranja);
+    border-radius: 50%;
+    left: 20px;
+    top: 150px;
+    height: 120px;
+    width: 120px;
+}
+.listadoHabilidades{
+    position: absolute;
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction: row;
+    top: 120px;
+    height: 300px;
+    width: calc(100% - 150px);
+    overflow: auto;
+}
+.listadoHabilidades::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.listadoHabilidades::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.listadoHabilidades::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.listadoHabilidades::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.listadoHabilidades::-webkit-scrollbar-thumb {
+    background-color: var(--azul);
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.listadoHabilidades::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+.tarjetas {
+    height: 95%;
+    width: 240px;
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: var(--beige);
+}

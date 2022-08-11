@@ -1,0 +1,68 @@
+@import url('https://rsms.me/inter/inter.css');
+:root {
+    --beige: #FEF2F2;
+    --naranja: #F26440;
+    --azul: #286F6C;
+    --gris: #ADADAD;
+    --blanco: #FFFFFF;
+    --grisdos: #F9F5F2;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Inter', sans-serif; 
+}
+nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    height: 50px;
+    z-index: 10000;
+}
+.barraDesplegable {
+    position: fixed;
+    right: 30px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    transition: 0.5s;
+}
+.barraDesplegable:hover{
+    right: 0px;
+    width: 100px;
+    overflow: visible;
+    cursor: pointer;
+}
+.barraDesplegable> ul {
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 10px;
+}
+.barraDesplegable> ul  > li {
+    display: flex;
+    background-color: var(--naranja);
+    padding-left: 10px;
+    color: var(--blanco);
+    transition: 0.3s;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+}
+.barraDesplegable> ul  > li:hover {
+    display: flex;
+    background-color: var(--azul);
+}
+.barraDesplegable> ul  > li:nth-child(3){
+    border-radius: 0px 0px 10px 10px;
+}
+.logomenu{
+    position: relative;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+}

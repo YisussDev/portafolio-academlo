@@ -1,0 +1,65 @@
+h1{
+    font-family: 'Inter', sans-serif; 
+    font-size: 50px;
+    font-weight: bold;
+}
+.redes {
+    position: absolute;
+    z-index: 2000;
+    height: 300px;
+    width: 60px;
+}
+.redes > div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color:var(--naranja);
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 1000;
+}
+.redes > div:hover {
+    cursor: pointer;
+    background-color: var(--azul);
+}
+.redes > div > img {
+    height: 50%;
+    width: 50%;
+}
+.perfil{
+    display:block;
+    height: calc(100% - 115px);
+    width: 100%;
+}
+.perfil > img {
+    position: absolute;
+    bottom:0px;
+    height:70%;
+    left: 15%;
+    width: auto;
+}
+.circle {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: var(--azul);
+    bottom: 150px;
+    left: 38%;
+}
+    body{
+        min-height:100vh;
+    }
+    section{
+        height: 100vh;
+        background-color: var(--blanco);
+    }
+    .section1{
+        position: relative;
+        background-color: var(--beige);
+        padding:50px 0px 0px 30px;
+        overflow: hidden;
+    }
