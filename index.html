@@ -5,26 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/nav.css">
+    <link rel="stylesheet" href="./estilos/footer.css">
     <link rel="stylesheet" href="./estilos/section1.css">
     <link rel="stylesheet" href="./estilos/section2.css">
     <link rel="stylesheet" href="./estilos/section3.css">
+    <link rel="stylesheet" href="./estilos/section4.css">
+    <link rel="stylesheet" href="./estilos/section5.css">
     <title>Document</title>
 </head>
 <body>
   <header>
     <nav>
       <div class="barraDesplegable">
-        <img src="./images/menu.svg" type="svg" class="logomenu"></img>
-        <ul>
-          <li>Inicio</li>
-          <li>Contacto</li>
-          <li>Portafolio</li>
-        </ul>
+        <a href="#section33" class="logonav">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="253px" height="239px" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 682400 644600"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                <g id="Capa_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"/>
+                  <path class="fil0" d="M625200 0l-558800 0c-31500,0 -57200,30300 -57200,67400 0,37100 25700,67500 57200,67500l558800 0c31400,0 57200,-30400 57200,-67500 0,-37100 -25800,-67400 -57200,-67400z"/>
+                  <path class="fil0" d="M616000 254900l-558800 0c-31400,0 -57200,30300 -57200,67400 0,37100 25800,67400 57200,67400l558800 0c31500,0 57200,-30300 57200,-67400 0,-37100 -25700,-67400 -57200,-67400z"/>
+                  <path class="fil0" d="M625200 509800l-558800 0c-31500,0 -57200,30300 -57200,67400 0,37100 25700,67400 57200,67400l558800 0c31400,0 57200,-30300 57200,-67400 0,-37100 -25800,-67400 -57200,-67400z"/>
+                </g>
+            </svg>
+        </a>
       </div>
     </nav>
   </header>
   <main>
-    <section class="section1">
+    <section class="section1" id="Acerca">
       <h1>FrontEnd Developer</h1>
       <div class="redes">
         <div>
@@ -37,19 +47,19 @@
           <img src="./images/linkedin.svg" alt="">
         </div>
       </div>
-      <div class="circle"></div>
       <div class="perfil">
+        <div class="circle"></div>
         <div class="perfilImg">
           <img src="./images/perfil.png" alt="">
         </div>
       </div>
+      <div id="acercaDeMi">
+        <h2>Acerca de mí</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur laboriosam autem voluptatem, facere incidunt quaerat ab repellat, sapiente itaque ad ducimus tempora voluptas sed maiores magni necessitatibus odio aliquid numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt iure, dolores expedita culpa perferendis in? Tempora unde cum amet molestias numquam impedit, tempore totam facilis, ut praesentium, ad natus?</p>
+        </div>
 
     </section>
-    <section class="section2">
-      <div id="acercaDeMi">
-      <h2>Acerca de mí</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur laboriosam autem voluptatem, facere incidunt quaerat ab repellat, sapiente itaque ad ducimus tempora voluptas sed maiores magni necessitatibus odio aliquid numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt iure, dolores expedita culpa perferendis in? Tempora unde cum amet molestias numquam impedit, tempore totam facilis, ut praesentium, ad natus?</p>
-    </div>
+    <section class="section2" id="Habilidades">
     <div id="misHabilidades">
       <div class="burbujaAzul"><h2>Mis</h2></div>
       <h2>habilidades</h2>
@@ -62,7 +72,7 @@
       </div>
     </div>
     </section>
-    <section class="section3">
+    <section class="section3" id="Estudios">
       <h2>Estudios</h2>
       <div class="listaEstudios">
         <div class="tarjetasEstudios">
@@ -106,6 +116,37 @@
         </div>
       </div>
     </section>
+    <section class="section4" id="Contacto">
+      <a href="" class="tarjetaPortafolio">
+          <img src="./images/maxflix.png" alt="">
+          <h3>MaxFlix</h3>
+      </a>
+      <h2>Portafolio</h2>
+      <a href="" class="tarjetaPortafolio">
+        <img src="./images/rick.png" alt="">
+        <h3>Rick&Morty</h3>
+      </a>
+    </section>
+    <section class="section5">
+      <h2>Contacto</h2>
+      <div class="contactoTarjetas">
+        <div class="tarjetaCto">
+          <div class="circleCto"><img src="./images/phone.svg" alt=""></div>
+          <h4>Número de celular</h4>
+          <h6>+57 3042487457</h6>
+        </div>
+        <div class="tarjetaCto">
+          <div class="circleCto"><img src="./images/mail.svg" alt=""></div>
+          <h4>Email</h4>
+          <h6>jesuspaguay30@gmail.com</h6>
+        </div>
+        <div class="circleBig"></div>
+        
+      </div>
+    </section>
   </main>
+  <footer class="footer--end">
+    <h3>Hecho con ❤️ en academlo</h3>
+  </footer>
 </body>
 </html>

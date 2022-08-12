@@ -1,24 +1,10 @@
 .section2 {
-    display: grid;
-    grid-template-rows: 480px 500px;
-    height: 980px;
-}
-#acercaDeMi{
-    padding: 80px 20px 0px 20px;
-}
-#acercaDeMi > h2 {
-    font-size: 2.5rem;
-    color: var(--azul);
-    margin-bottom: 20px;
-}
-#acercaDeMi > p {
-    font-size: 1.3rem;
-    color: var(--gris);
+    height: 550px;
 }
 #misHabilidades {
     margin-top: 80px;
     position: relative;
-    height: 500px;
+    height: 400px;
     
 }
 #misHabilidades > h2 {

@@ -1,7 +1,7 @@
 .section3{
     position: relative;
-    padding: 30px;
-    min-height: 900px;
+    padding: 0px 30px;
+    height: 700px;
 }
 .section3 > h2 {
     color: var(--azul);

@@ -1,0 +1,55 @@
+.section5 {
+    padding: 0px 30px;
+    height: 500px;
+}
+.section5 > h2{
+    font-size: 2.5rem;
+    color: var(--azul);
+    padding: 5px;
+}
+.contactoTarjetas {
+    display: grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+}
+.tarjetaCto{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1000;
+}
+.tarjetaCto > h4 {
+    margin-bottom: 10px;
+    color: var(--azul);
+}
+.tarjetaCto > h6 {
+    color: var(--gris);
+}
+.circleCto {
+    background-color: var(--naranja);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.circleBig {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: -180px;
+    background-color: var(--azul);
+    border-radius: 50%;
+    opacity: 0.3;
+}
+.circleCto > svg {
+    height: 40px;
+    width: 40px;
+}
