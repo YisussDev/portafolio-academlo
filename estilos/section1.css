@@ -92,3 +92,46 @@ section{
     font-size: 1.3rem;
     color: var(--gris);
 }
+
+@media (min-width: 768px){
+    #acercaDeMi {
+        padding: 0px 160px;
+        padding-top: 100px;
+    }
+    .redes{
+        left: 15%;
+    }
+    .section1 > h1 {
+        width: 300px;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }
+    .section1{
+        position: relative;
+        grid-template-rows: 600px 550px;
+        padding-top: 50px;
+        overflow: visible;
+        background-color: var(--beige);
+    }
+    .perfil {
+        height: 100%;
+    }
+}
+
+@media (min-width: 1113px) and (min-width: 768px) {
+    .redes {
+        height: 80px;
+        width: 300px;
+        display: flex;
+        top: 32%;
+        left: 15%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .redes > div{
+        margin-top: 0px;
+        height: 100%;
+        width: 80px;
+    }
+}

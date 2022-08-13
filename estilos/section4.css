@@ -33,3 +33,17 @@
 a {
     color: black;
 }
+
+@media (min-width: 768px){
+    .tarjetaPortafolio:nth-child(3) {
+        top: -50px;
+        left: 80px;
+    }
+    .tarjetaPortafolio:nth-child(1) {
+        bottom: -50px;
+        right: 80px;
+    }
+    .section4 {
+        height: 60vh;
+    }
+}

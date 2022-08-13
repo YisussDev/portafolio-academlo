@@ -42,3 +42,26 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@media (min-width: 768px){
+    .section3 {
+        position: relative;
+        padding: 0px 160px;
+        height: 350px;
+    }
+    .listaEstudios {
+        margin-top: 20px;
+        display: flex;
+        column-gap: 20px;
+        overflow-x: auto;
+    }
+    .tarjetasEstudios h3 {
+        font-size: 0.8rem;
+    }
+    .tarjetasEstudios p {
+        font-size: 0.8rem;
+    }
+    .tarjetasEstudios h4 {
+        font-size: 0.8rem;
+    }
+}
