@@ -1,0 +1,43 @@
+.sidebar{
+    position: fixed;
+    z-index: 1000000;
+    height: 100%;
+    width: 100%;
+    right: -100%;
+    background-color: var(--beige);
+    transition: 0.4s;
+}
+.sidebar > ul{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar > ul > a{
+    padding: 30px 30px;
+    text-align: center;
+    transition: 0.3s linear;
+}
+.mostrarSidebar{
+    right: 0;
+}
+.sidebar > ul > a:hover{
+    cursor: pointer;
+    background-color: var(--naranja);
+    color: var(--beige);
+}
+.sidebar > span {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    background-color: var(--beige);
+}
+.sidebar > span:hover{
+    cursor: pointer;
+    background-color: var(--naranja);
+}

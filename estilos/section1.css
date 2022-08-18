@@ -20,6 +20,7 @@ section{
     font-family: 'Inter', sans-serif; 
     font-size: 50px;
     font-weight: bold;
+    z-index: 1000;
 }
 .redes {
     position: absolute;
@@ -29,7 +30,7 @@ section{
     left: 20px;
     top: 150px;
 }
-.redes > div {
+.redes > a {
     width: 60px;
     height: 60px;
     display: flex;
@@ -41,11 +42,11 @@ section{
     transition: 0.3s;
     z-index: 1000;
 }
-.redes > div:hover {
+.redes > a:hover {
     cursor: pointer;
     background-color: var(--azul);
 }
-.redes > div > img {
+.redes > a > img {
     height: 50%;
     width: 50%;
 }
@@ -91,11 +92,13 @@ section{
 #acercaDeMi > p {
     font-size: 1.3rem;
     color: var(--gris);
+    height: 300px;
+    overflow: auto;
 }
 
 @media (min-width: 768px){
     #acercaDeMi {
-        padding: 0px 160px;
+        padding: 0px 100px;
         padding-top: 100px;
     }
     .redes{
@@ -104,8 +107,8 @@ section{
     .section1 > h1 {
         width: 300px;
         position: absolute;
-        top: 20%;
-        left: 15%;
+        top: 5%;
+        left: 5%;
     }
     .section1{
         position: relative;
@@ -117,9 +120,24 @@ section{
     .perfil {
         height: 100%;
     }
+    .circle {
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: var(--azul);
+        top: 40px;
+        right: 25%;
+    }
 }
 
 @media (min-width: 1113px) and (min-width: 768px) {
+    .section1 > h1 {
+        width: 300px;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }
     .redes {
         height: 80px;
         width: 300px;
@@ -134,4 +152,5 @@ section{
         height: 100%;
         width: 80px;
     }
+    
 }

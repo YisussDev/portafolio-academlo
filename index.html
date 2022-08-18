@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/nav.css">
     <link rel="stylesheet" href="./estilos/footer.css">
+    <link rel="stylesheet" href="./estilos/sidebar.css">
     <link rel="stylesheet" href="./estilos/section1.css">
     <link rel="stylesheet" href="./estilos/section2.css">
     <link rel="stylesheet" href="./estilos/section3.css">
@@ -16,7 +17,7 @@
 <body>
   <header>
     <nav>
-      <div class="barraDesplegable">
+      <div class="barraDesplegable" id="boton_abrir">
         <a href="#section33" class="logonav">
             <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="253px" height="239px" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
               viewBox="0 0 682400 644600"
@@ -31,21 +32,40 @@
             </svg>
         </a>
       </div>
+      <ul>
+        <a href='#Acerca'>Home</a>
+        <a href='#acercaDeMi'>Acerca de mí</a>
+        <a href='#Habilidades'>Mis Habilidades</a>
+        <a href='#Estudios'>Estudios</a>
+        <a href='#Portafolio'>Portafolio</a>
+        <a href='#Contacto'>Contacto</a>
+      </ul>
     </nav>
   </header>
+  <div class="sidebar" id="sidebar">
+    <span id="boton_cerrar">❌</span>
+    <ul>
+      <a href='#Acerca' class="blink">Home</a>
+        <a href='#acercaDeMi' class="blink">Acerca de mí</a>
+        <a href='#Habilidades' class="blink">Mis Habilidades</a>
+        <a href='#Estudios' class="blink">Estudios</a>
+        <a href='#Portafolio' class="blink">Portafolio</a>
+        <a href='#Contacto' class="blink">Contacto</a>
+    </ul>
+  </div>
   <main>
     <section class="section1" id="Acerca">
       <h1>FrontEnd Developer</h1>
       <div class="redes">
-        <div>
-          <img src="./images/instagram.svg" alt="">
-        </div>
-        <div>
-          <img src="./images/twitter.svg" alt="">
-        </div>
-        <div>
-          <img src="./images/linkedin.svg" alt="">
-        </div>
+        <a href="https://www.instagram.com/j270599/" target="_blank">
+          <img src="./images/redes/instagram.svg" alt="">
+        </a>
+        <a href="https://twitter.com/Y____27059" target="_blank">
+          <img src="./images/redes/twitter.svg" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/jesuspaguayn" target="_blank">
+          <img src="./images/redes/linkedin.svg" alt="">
+        </a>
       </div>
       <div class="perfil">
         <div class="circle"></div>
@@ -55,20 +75,34 @@
       </div>
       <div id="acercaDeMi">
         <h2>Acerca de mí</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur laboriosam autem voluptatem, facere incidunt quaerat ab repellat, sapiente itaque ad ducimus tempora voluptas sed maiores magni necessitatibus odio aliquid numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt iure, dolores expedita culpa perferendis in? Tempora unde cum amet molestias numquam impedit, tempore totam facilis, ut praesentium, ad natus?</p>
+        <p>Soy una persona tranquila y apasionada por la Programación, en búsqueda de una oportunidad para poner a prueba mis conocimientos, responsable y comprometido con los retos asignados.</p>
         </div>
 
     </section>
     <section class="section2" id="Habilidades">
     <div id="misHabilidades">
-      <div class="burbujaAzul"><h2>Mis</h2></div>
+      <div class="burbujaAzul">
+        <h2>Mis</h2>
+      </div>
       <h2>habilidades</h2>
       <div class="burbujaNaranja"></div>
       <div class="listadoHabilidades">
-        <div class="tarjetas"></div>
-        <div class="tarjetas"></div>
-        <div class="tarjetas"></div>
-        <div class="tarjetas"></div>
+        <div class="tarjetas">
+          <img src="./images/tarjetas/html.png" alt="">
+          <h3>HTML5</h3>
+        </div>
+        <div class="tarjetas">
+          <img src="./images/tarjetas/css-3.png" alt="">
+          <h3>CSS3</h3>
+        </div>
+        <div class="tarjetas">
+          <img src="./images/tarjetas/java-script.png" alt="">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="tarjetas">
+          <img src="./images/tarjetas/atom.png" alt="">
+          <h3>React JS</h3>
+        </div>
       </div>
     </div>
     </section>
@@ -77,7 +111,7 @@
       <div class="listaEstudios">
         <div class="tarjetasEstudios">
           <div class="imgEstudio">
-            <img src="./images/unicesar.png" alt="">
+            <img src="./images/estudios/unicesar.png" alt="">
           </div>
           <div class="institucionEstudios">
             <h3>Universidad Popular del Cesar</h3>
@@ -90,7 +124,7 @@
         </div>
         <div class="tarjetasEstudios">
           <div class="imgEstudio">
-            <img src="./images/academlo.png" alt="">
+            <img src="./images/estudios/academlo.png" alt="">
           </div>
           <div class="institucionEstudios">
             <h3>Academlo</h3>
@@ -103,7 +137,7 @@
         </div>
         <div class="tarjetasEstudios">
           <div class="imgEstudio">
-            <img src="./images/miriadax.png" alt="">
+            <img src="./images/estudios/miriadax.png" alt="">
           </div>
           <div class="institucionEstudios">
             <h3>Miriadax</h3>
@@ -116,27 +150,27 @@
         </div>
       </div>
     </section>
-    <section class="section4" id="Contacto">
+    <section class="section4" id="Portafolio">
       <a href="" class="tarjetaPortafolio">
-          <img src="./images/maxflix.png" alt="">
+          <img src="./images/portafolio/rick.png" alt="">
           <h3>MaxFlix</h3>
       </a>
       <h2>Portafolio</h2>
       <a href="" class="tarjetaPortafolio">
-        <img src="./images/rick.png" alt="">
+        <img src="./images/portafolio/maxflix.png" alt="">
         <h3>Rick&Morty</h3>
       </a>
     </section>
-    <section class="section5">
+    <section class="section5" id="Contacto">
       <h2>Contacto</h2>
       <div class="contactoTarjetas">
         <div class="tarjetaCto">
-          <div class="circleCto"><img src="./images/phone.svg" alt=""></div>
+          <div class="circleCto"><img src="./images/contacto/phone.svg" alt=""></div>
           <h4>Número de celular</h4>
           <h6>+57 3042487457</h6>
         </div>
         <div class="tarjetaCto">
-          <div class="circleCto"><img src="./images/mail.svg" alt=""></div>
+          <div class="circleCto"><img src="./images/contacto/mail.svg" alt=""></div>
           <h4>Email</h4>
           <h6>jesuspaguay30@gmail.com</h6>
         </div>
@@ -146,7 +180,8 @@
     </section>
   </main>
   <footer class="footer--end">
-    <h3>Hecho con ❤️ en academlo</h3>
+    <h3>Hecho con ❤️ en Academlo</h3>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
